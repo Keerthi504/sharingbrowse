@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/browse"
+        android:text="Browse" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:id="@+id/encrypt"
+        android:text="encrypt" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/browse"
+        android:layout_marginTop="20dp"
+        android:id="@+id/selected"
+        android:textStyle="bold"
+        android:textColor="#4189E1"
+        android:textSize="20sp"
+        android:text="Selected file" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selected"
+        android:layout_marginTop="20dp"
+        android:id="@+id/file_path"
+       android:text="No file has been selected"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/passkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encrypt"
+        android:layout_marginTop="62dp"
+        android:layout_toEndOf="@+id/selected"
+        android:layout_toRightOf="@+id/selected"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/errors"
+        android:textStyle="bold"
+        android:textColor="#4189E1"
+        android:textSize="20sp"
+         android:text="hi"
+        android:layout_below="@+id/passkey"
+        android:layout_alignRight="@+id/file_path"
+        android:layout_alignEnd="@+id/file_path" />
+
+</RelativeLayout>
